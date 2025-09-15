@@ -5,4 +5,4 @@ services:
     ports:
       - "80:80"
     volumes:
-      - \\wsl.localhost\Ubuntu\home\hoeherj\test-nginx:/usr/share/nginx/html
+      - ./static-html-directory:/usr/share/nginx/html
