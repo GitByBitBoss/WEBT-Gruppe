@@ -1,2 +1,5 @@
-FROM nginx
-COPY ./static-html-directory /usr/share/nginx/html
+FROM nginx:latest
+COPY ./nginx/conf.d /etc/nginx/conf.d
+COPY ./static-html-directory/start-page/index.html /usr/share/nginx/html
+
+

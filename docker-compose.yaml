@@ -5,4 +5,5 @@ services:
     ports:
       - "80:80"
     volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
       - ./static-html-directory:/usr/share/nginx/html
