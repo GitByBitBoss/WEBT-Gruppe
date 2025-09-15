@@ -1,2 +1,2 @@
 FROM nginx
-COPY static-html-directory /usr/share/nginx/html
+COPY \\wsl.localhost\Ubuntu\home\hoeherj\test-nginx\index.html /usr/share/nginx/html
