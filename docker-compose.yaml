@@ -1,15 +1,19 @@
+version: "3.8"
+
 services:
   php:
     image: php:8.2-fpm
+    container_name: test-php
     volumes:
       - .:/var/www/html
+
   nginx:
     image: nginx:latest
     container_name: test-nginx
     ports:
       - "80:80"
     volumes:
+      - .:/var/www/html
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./static-html-directory:/usr/share/nginx/html
     depends_on:
       - php
