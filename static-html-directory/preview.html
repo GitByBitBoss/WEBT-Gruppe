@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DriveWell Learning Platform – Preview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section.questions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    article.question {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    article.question:hover {
+      transform: translateY(-4px);
+    }
+
+    .category {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #1a73e8;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      margin: 0.3rem 0 0.8rem;
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #666;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DriveWell – Learning Platform Preview</h1>
+    <p>Sample Question Bank</p>
+  </header>
+
+  <main>
+    <h2>Question Entries</h2>
+    <section class="questions">
+      <!-- 20+ questions -->
+      <article class="question">
+        <div class="icon">🚗</div>
+        <div class="category">Car Theory</div>
+        <h3 class="title">What is the minimum legal tire tread depth?</h3>
+      </article>
+
+      <article class="question">
+        <div class="icon">🚦</div>
+        <div class="category">Traffic Signs</div>
+        <h3 class="title">What does a triangular red sign mean?</h3>
+      </article>
+
+      <article class="question">
+        <div class="icon">🏍️</div>
+        <div class="category">Motorcycle Safety</div>
+        <h3 class="title">When should you check your blind spot?</h3>
+      </article>
+
+      <!-- Kopieren/Variieren für insgesamt 20 Fragen -->
+      <!-- Hier mal ein Loop aus ähnlichen Fragen -->
+      <article class="question"><div class="icon">🚚</div><div class="category">Truck Theory</div><h3 class="title">What is the maximum allowed driving time per day?</h3></article>
+      <article class="question"><div class="icon">🚦</div><div class="category">Traffic Signs</div><h3 class="title">What does a yellow diamond mean?</h3></article>
+      <article class="question"><div class="icon">🚗</div><div class="category">Car Theory</div><h3 class="title">At what BAC are you considered unfit to drive?</h3></article>
+      <article class="question"><div class="icon">🏍️</div><div class="category">Motorcycle Safety</div><h3 class="title">What gear should you wear for rain riding?</h3></article>
+      <article class="question"><div class="icon">🚦</div><div class="category">Traffic Signs</div><h3 class="title">What does a blue circular sign indicate?</h3></article>
+      <article class="question"><div class="icon">🚗</div><div class="category">Car Theory</div><h3 class="title">When must you use dipped headlights?</h3></article>
+      <article class="question"><div class="icon">🚚</div><div class="category">Truck Theory</div><h3 class="title">What is the minimum rest period after 4.5 hours driving?</h3></article>
+      <article class="question"><div class="icon">🚦</div><div class="category">Traffic Signs</div><h3 class="title">What does a stop sign require you to do?</h3></article>
+      <article class="question"><div class="icon">🏍️</div><div class="category">Motorcycle Safety</div><h3 class="title">Why is countersteering important?</h3></article>
+      <article class="question"><div class="icon">🚗</div><div class="category">Car Theory</div><h3 class="title">What is the correct hand position on the steering wheel?</h3></article>
+      <article class="question"><div class="icon">🚚</div><div class="category">Truck Theory</div><h3 class="title">What is the max truck width allowed in EU?</h3></article>
+      <article class="question"><div class="icon">🚦</div><div class="category">Traffic Signs</div><h3 class="title">What does a flashing amber light mean?</h3></article>
+      <article class="question"><div class="icon">🚗</div><div class="category">Car Theory</div><h3 class="title">How do you perform an emergency stop?</h3></article>
+      <article class="question"><div class="icon">🏍️</div><div class="category">Motorcycle Safety</div><h3 class="title">Why should you avoid the center of the lane in rain?</h3></article>
+      <article class="question"><div class="icon">🚦</div><div class="category">Traffic Signs</div><h3 class="title">What shape indicates a mandatory sign?</h3></article>
+      <article class="question"><div class="icon">🚚</div><div class="category">Truck Theory</div><h3 class="title">What is the correct way to secure a load?</h3></article>
+      <article class="question"><div class="icon">🚗</div><div class="category">Car Theory</div><h3 class="title">What is the stopping distance at 50 km/h?</h3></article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DriveWell Driving School – Static Preview</p>
+  </footer>
+</body>
+</html>
