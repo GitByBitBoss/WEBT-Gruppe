@@ -1,7 +1,7 @@
 <?php
 
 Interface QuestionInterface {
-    public function getName();
-    public function getCategory();
-    public function getHTML();
+    public function getName(): string;
+    public function getCategory(): string;
+    public function getHTML(): string;
 }

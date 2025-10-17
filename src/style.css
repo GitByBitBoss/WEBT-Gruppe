@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.questionCar, .questionBike{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.questionCar h2 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.questionBike h2 {
+  color: #a630e1;
+  margin-bottom: 0.5rem;
+}
+
+.questionCar, .questionBike h3 {
+  color: #555;
+  font-weight: normal;
+}
