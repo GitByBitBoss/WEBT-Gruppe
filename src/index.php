@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Theoriefragen – DriveWell</title>
+    <title>Theoriefragen-DriveWell</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
