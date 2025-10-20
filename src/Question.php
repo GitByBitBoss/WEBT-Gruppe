@@ -1,27 +1,73 @@
 <?php
 require_once __DIR__ ."/interfaces/QuestionInterface.php";
 
-abstract class Question implements QuestionInterface {
-    protected string $name;
-    protected string $category;
-    function getName(): string {
-        return $this->name;
+class Question {
+    protected $id;
+    protected $text;
+    protected $options;
+    protected $correctAnswer;
+    protected $versionNumber;
+
+    public function __construct($id, $text, $options, $correctAnswer, $versionNumber) {
+        $this->id = $id;
+        $this->text = $text;
+        $this->options = $options;
+        $this->correctAnswer = $correctAnswer;
+        $this->versionNumber = $versionNumber;
     }
 
-    function getCategory(): string {
-        return $this->category;
+    // Getter für ID
+    public function getId() {
+        return $this->id;
     }
 
-    function getHTML(): string {
-        return "
-        <h2>{$this->getCategory()}</h2>
-        <h3>{$this->getName()}</h3>";
-     }
+    // Setter für ID
+    public function setId($id) {
+        $this->id = $id;
+    }
 
-     public function __construct(string $name, string $category) {
-        $this->name = $name;
-        $this->category = $category;
-     }
-     
+    // Getter für Fragetext
+    public function getText() {
+        return $this->text;
+    }
 
+    // Setter für Fragetext
+    public function setText($text) {
+        $this->text = $text;
+    }
+
+    // Getter für Antwortoptionen
+    public function getOptions() {
+        return $this->options;
+    }
+
+    // Setter für Antwortoptionen (z. B. Array)
+    public function setOptions($options) {
+        $this->options = $options;
+    }
+
+    // Getter für richtige Antwort
+    public function getCorrectAnswer() {
+        return $this->correctAnswer;
+    }
+
+    // Setter für richtige Antwort
+    public function setCorrectAnswer($correctAnswer) {
+        $this->correctAnswer = $correctAnswer;
+    }
+
+    // Getter für Versionsnummer
+    public function getVersionNumber() {
+        return $this->versionNumber;
+    }
+
+    // Setter für Versionsnummer
+    public function setVersionNumber($versionNumber) {
+        $this->versionNumber = $versionNumber;
+    }
+
+    // Optionale Zusatzmethode: Antwort prüfen
+    public function isCorrect($answer) {
+        return $this->correctAnswer === $answer;
+    }
 }
