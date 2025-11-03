@@ -1,6 +1,6 @@
 <?php
 
-class Course {
+class Course implements JsonSerializable{
     protected $id;
     protected $name;
     protected $vehicleType;
@@ -11,6 +11,15 @@ class Course {
         $this->name = $name;
         $this->vehicleType = $vehicleType;
         $this->questions = $questions;
+    }
+
+    public function jsonSerialize(): array {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'vehicleType' => $this->vehicleType,
+            'questions' => $this->questions
+        ];
     }
 
     // Getter für ID
