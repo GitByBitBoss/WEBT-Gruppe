@@ -7,7 +7,7 @@ class Seeder {
 
         for ($i = 1; $i <= 3; $i++) {
             $questions = [];
-            for ($j = 1; $j <= 4; $j++) {
+            for ($j = 0; $j <= 3; $j++) {
                 $questions[] = new Question(
                     $j,
                     "Frage $j zu Kurs $i",

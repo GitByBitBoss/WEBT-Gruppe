@@ -9,10 +9,5 @@ if (!isset($_GET["id"])) {
 
 $courses = Seeder::createDemoData();
 
-foreach ($courses as $course) {
-    if ($course->getId() == $_GET["id"]) {
-        echo json_encode($course);
-    }
-}
-
-
+$course = $courses[$_GET["id"]];
+return json_encode($course);
