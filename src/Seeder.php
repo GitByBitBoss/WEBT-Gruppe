@@ -1,5 +1,6 @@
 <?php
 require_once "./Question.php";
+require_once "./Course.php";
 class Seeder {
     public static function createDemoData(): array {
         $courses = [];

@@ -11,7 +11,7 @@ $courses = Seeder::createDemoData();
 
 foreach ($courses as $course) {
     if ($course->getId() == $_GET["id"]) {
-        return json_encode($course);
+        echo json_encode($course);
     }
 }
 
