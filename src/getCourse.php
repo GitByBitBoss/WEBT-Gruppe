@@ -10,4 +10,4 @@ if (!isset($_GET["id"])) {
 $courses = Seeder::createDemoData();
 
 $course = $courses[$_GET["id"]];
-return json_encode($course);
+echo json_encode($course);
