@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>DriveWell API Viewer</title>
+</head>
+<body>
+  <ul id="output">Lade Daten…</ul>
+
+  <script>
+    const output = document.getElementById("output");
+    const API_URL = "/getCourses.php";
+
+    fetch(API_URL)
+      .then(r => r.json())
+      .then(data => {
+        output.innerHTML = "";
+        if (Array.isArray(data)) {
+          data.forEach(course => {
+            const li = document.createElement("li");
+            li.textContent = `${course.name} (${course.vehicleType})`;
+            const qList = document.createElement("ul");
+            if (Array.isArray(course.questions)) {
+              course.questions.forEach(q => {
+                const qLi = document.createElement("li");
+                // Show question id and text
+                qLi.textContent = `Frage ${q.id}: ${q.text}`;
+                // Show answer options
+                if (Array.isArray(q.options)) {
+                  const aList = document.createElement("ul");
+                  q.options.forEach(opt => {
+                    const aLi = document.createElement("li");
+                    aLi.textContent = opt;
+                    aList.appendChild(aLi);
+                  });
+                  qLi.appendChild(aList);
+                }
+                qList.appendChild(qLi);
+              });
+            }
+            li.appendChild(qList);
+            output.appendChild(li);
+          });
+        } else {
+          output.textContent = "Keine Daten gefunden.";
+        }
+      })
+      .catch(() => {
+        output.textContent = "Fehler beim Laden der Daten.";
+      });
+  </script>
+</body>
+</html>

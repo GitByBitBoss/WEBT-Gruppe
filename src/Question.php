@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ ."/interfaces/QuestionInterface.php";
 
-class Question {
+class Question implements JsonSerializable {
     protected $id;
     protected $text;
     protected $options;
@@ -69,5 +69,16 @@ class Question {
     // Optionale Zusatzmethode: Antwort prüfen
     public function isCorrect($answer) {
         return $this->correctAnswer === $answer;
+    }
+
+    // Implementierung der jsonSerialize-Methode
+    public function jsonSerialize():array {
+        return [
+            'id' => $this->id,
+            'text' => $this->text,
+            'options' => $this->options,
+            'correctAnswer' => $this->correctAnswer,
+            'versionNumber' => $this->versionNumber
+        ];
     }
 }
