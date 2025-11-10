@@ -18,7 +18,7 @@ class Course implements JsonSerializable{
             'id' => $this->id,
             'name' => $this->name,
             'vehicleType' => $this->vehicleType,
-            'questions' => json_encode($this->questions),
+            'questions' => $this->questions
         ];
     }
 
