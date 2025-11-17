@@ -1,6 +1,6 @@
 <?php
-require_once "./Question.php";
-require_once "./Course.php";
+require_once __DIR__ . "/Question.php";
+require_once __DIR__ . "/Course.php";
 class Seeder {
     public static function createDemoData(): array {
         $courses = [];
