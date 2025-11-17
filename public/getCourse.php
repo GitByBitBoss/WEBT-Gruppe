@@ -1,6 +1,17 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-require_once "./Seeder.php";
+require_once __DIR__ . "/../src/Seeder.php";
+require_once __DIR__ . '/../src/security/JwtService.php';
+require_once __DIR__ . "/../src/security/JwtAuth.php";
+
+$sharedSecret = 'webt_secret';
+$auth = new JwtAuth(new JwtService($sharedSecret));
+
+if (!$auth->check()) {
+    http_response_code(401);
+    echo json_encode(['error' => 'Unauthorized']);
+    exit;
+}
 
 if (!isset($_GET["id"])) {
     http_response_code(400);

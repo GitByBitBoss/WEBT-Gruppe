@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-require_once "./Seeder.php";
+require_once __DIR__ ."/../src/Seeder.php";
 
 $courses = Seeder::createDemoData();
 
