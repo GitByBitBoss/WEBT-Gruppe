@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   php:
-    image: php:8.2-fpm
+    build:
+      context: .
+      dockerfile: dockerfile 
     container_name: test-php
     volumes:
       - .:/var/www/html
