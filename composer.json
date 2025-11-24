@@ -7,5 +7,7 @@
             "Webt\\Drivingschool\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "endroid/qr-code": "^5.0"
+    }
 }

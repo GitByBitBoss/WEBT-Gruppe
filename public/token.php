@@ -17,7 +17,7 @@ if (!$username) {
 }
 
 $now = time();
-$exp = $now + 5; // 15 Minuten gültig
+$exp = $now + 15 * 60; // 15 Minuten gültig
 
 $payload = [
     'iss' => 'mein-server',
