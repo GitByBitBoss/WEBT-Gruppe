@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Endroid\QrCode\Builder\Builder;
 use Endroid\QrCode\Writer\PngWriter;
 use Endroid\QrCode\Encoding\Encoding;
-use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelHigh;
+use Endroid\QrCode\ErrorCorrectionLevel;
 
 // ---------------------------------------------------------
 // 1. Module-Daten
@@ -104,12 +104,12 @@ foreach ($modules as $module) {
 
     $materialUrl = isset($module['materialUrl']) ? $module['materialUrl'] : '';
 
-    // QR-Code erzeugen
+    // QR-Code erzeugen – mit Enum ErrorCorrectionLevel
     $qrResult = Builder::create()
         ->writer(new PngWriter())
         ->data($materialUrl)
         ->encoding(new Encoding('UTF-8'))
-        ->errorCorrectionLevel(new ErrorCorrectionLevelHigh())
+        ->errorCorrectionLevel(ErrorCorrectionLevel::High)
         ->size(200)
         ->margin(10)
         ->build();
