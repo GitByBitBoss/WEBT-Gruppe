@@ -1,0 +1,13 @@
+{
+    "name": "webt/drivingschool",
+    "description": "Project for our WEBT Core 4 exam with the topic driving school",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Webt\\Drivingschool\\": "src/"
+        }
+    },
+    "require": {
+        "endroid/qr-code": "^6.0"
+    }
+}

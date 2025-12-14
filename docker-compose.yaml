@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   php:
-    image: php:8.2-fpm
+    build:
+      context: .
+      dockerfile: dockerfile 
     container_name: test-php
     volumes:
       - .:/var/www/html
@@ -11,7 +13,7 @@ services:
     image: nginx:latest
     container_name: test-nginx
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - .:/var/www/html
       - ./nginx/conf.d:/etc/nginx/conf.d
