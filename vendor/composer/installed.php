@@ -3,7 +3,7 @@
         'name' => 'webt/drivingschool',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ec9e9dc20b04e757dd0ed1da7a7bc1d9a706879d',
+        'reference' => '7c5c1728430308a21b50c7bad2a876f71888101b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -40,7 +40,7 @@
         'webt/drivingschool' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ec9e9dc20b04e757dd0ed1da7a7bc1d9a706879d',
+            'reference' => '7c5c1728430308a21b50c7bad2a876f71888101b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
