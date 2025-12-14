@@ -1,6 +1,10 @@
 <?php
-require_once __DIR__ . "/Question.php";
-require_once __DIR__ . "/Course.php";
+
+namespace Webt\Drivingschool;
+
+use Webt\Drivingschool\Question;
+use Webt\Drivingschool\Course;
+
 class Seeder {
     public static function createDemoData(): array {
         $courses = [];

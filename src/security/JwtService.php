@@ -1,5 +1,6 @@
 <?php
 
+namespace Webt\Drivingschool\Security;
 
 /**
  * Minimalistische JWT-HS256 Implementierung ohne externe Bibliotheken.

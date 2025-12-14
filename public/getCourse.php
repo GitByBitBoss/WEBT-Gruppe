@@ -1,8 +1,10 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-require_once __DIR__ . "/../src/Seeder.php";
-require_once __DIR__ . '/../src/security/JwtService.php';
-require_once __DIR__ . "/../src/security/JwtAuth.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Webt\Drivingschool\Seeder;
+use Webt\Drivingschool\Security\JwtService;
+use Webt\Drivingschool\Security\JwtAuth;
 
 $sharedSecret = 'webt_secret';
 $auth = new JwtAuth(new JwtService($sharedSecret));

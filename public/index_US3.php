@@ -1,7 +1,9 @@
 <?php
-require_once __DIR__ . "/../src/Seeder.php";
-require_once __DIR__ . "/../src/Course.php";
-require_once __DIR__ . "/../src/Question.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Webt\Drivingschool\Seeder;
+use Webt\Drivingschool\Course;
+use Webt\Drivingschool\Question;
 
 $courses = Seeder::createDemoData();
 ?>

@@ -1,6 +1,8 @@
 <?php
 
-class Course implements JsonSerializable{
+namespace Webt\Drivingschool;
+
+class Course implements \JsonSerializable{
     protected $id;
     protected $name;
     protected $vehicleType;

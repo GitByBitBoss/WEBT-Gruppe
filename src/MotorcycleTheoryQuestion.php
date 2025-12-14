@@ -1,14 +1,18 @@
 <?php
+
+namespace Webt\Drivingschool;
+
+use Webt\Drivingschool\Question;
+
 class MotorcycleTheoryQuestion extends Question {
-    public function __construct($name,$category) {
-        parent::__construct($name,$category);
+    public function __construct($id, $text, $options = [], $correctAnswer = null, $versionNumber = 1) {
+        parent::__construct($id, $text, $options, $correctAnswer, $versionNumber);
     }
 
-    
     function getHTML(): string {
         return "
-        <h2>{$this->getCategory()}</h2>
-        <h3>{$this->getName()}</h3>
+        <h2>{$this->getVersionNumber()}</h2>
+        <h3>{$this->getText()}</h3>
         <img src='../images/motorcycle.svg' width='2%' height='2%' />";
      }
 }

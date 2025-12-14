@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../src/security/JwtService.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Webt\Drivingschool\Security\JwtService;
 
 header('Content-Type: application/json');
 

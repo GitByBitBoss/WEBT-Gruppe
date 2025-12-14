@@ -1,7 +1,8 @@
 <?php
-require_once __DIR__ ."/interfaces/QuestionInterface.php";
 
-class Question implements JsonSerializable {
+namespace Webt\Drivingschool;
+
+class Question implements \JsonSerializable {
     protected $id;
     protected $text;
     protected $options;

@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/JwtService.php';
+namespace Webt\Drivingschool\Security;
+
+use Webt\Drivingschool\Security\JwtService;
 
 /**
  * Einfache Auth-Klasse zum Prüfen von JWT-Tokens in beliebigen PHP-Skripten.

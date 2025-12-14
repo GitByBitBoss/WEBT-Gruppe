@@ -21,3 +21,11 @@ COPY . /var/www/html
 
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod +x /var/www/html
+
+RUN pecl install xdebug \
+ && docker-php-ext-enable xdebug
+
+RUN { \
+  echo 'xdebug.mode=coverage'; \
+  echo 'xdebug.start_with_request=0'; \
+} > /usr/local/etc/php/conf.d/xdebug.ini
