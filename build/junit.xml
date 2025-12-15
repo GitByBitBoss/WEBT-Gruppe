@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="9" assertions="84" errors="0" warnings="0" failures="0" skipped="0" time="0.372820">
-    <testsuite name="Application Test Suite" tests="9" assertions="84" errors="0" warnings="0" failures="0" skipped="0" time="0.372820">
-      <testsuite name="CarTheoryQuestionTest" file="/var/www/html/tests/CarTheoryQuestionTest.php" tests="1" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.257524">
-        <testcase name="testConstructAndGetHTML" class="CarTheoryQuestionTest" classname="CarTheoryQuestionTest" file="/var/www/html/tests/CarTheoryQuestionTest.php" line="9" assertions="5" time="0.257524"/>
+  <testsuite name="" tests="9" assertions="84" errors="0" warnings="0" failures="0" skipped="0" time="0.360043">
+    <testsuite name="Application Test Suite" tests="9" assertions="84" errors="0" warnings="0" failures="0" skipped="0" time="0.360043">
+      <testsuite name="CarTheoryQuestionTest" file="/var/www/html/tests/CarTheoryQuestionTest.php" tests="1" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.248787">
+        <testcase name="testConstructAndGetHTML" class="CarTheoryQuestionTest" classname="CarTheoryQuestionTest" file="/var/www/html/tests/CarTheoryQuestionTest.php" line="9" assertions="5" time="0.248787"/>
       </testsuite>
-      <testsuite name="CourseSettersTest" file="/var/www/html/tests/CourseSettersTest.php" tests="1" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.017131">
-        <testcase name="testSettersAndJson" class="CourseSettersTest" classname="CourseSettersTest" file="/var/www/html/tests/CourseSettersTest.php" line="9" assertions="7" time="0.017131"/>
+      <testsuite name="CourseSettersTest" file="/var/www/html/tests/CourseSettersTest.php" tests="1" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.040147">
+        <testcase name="testSettersAndJson" class="CourseSettersTest" classname="CourseSettersTest" file="/var/www/html/tests/CourseSettersTest.php" line="9" assertions="7" time="0.040147"/>
       </testsuite>
-      <testsuite name="CourseTest" file="/var/www/html/tests/CourseTest.php" tests="4" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.052548">
-        <testcase name="testConstructAndGetters" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="10" assertions="4" time="0.000275"/>
-        <testcase name="testAddQuestionAndJsonSerialize" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="20" assertions="3" time="0.000211"/>
-        <testcase name="testEmptyQuestionsList" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="34" assertions="2" time="0.017421"/>
-        <testcase name="testQuestionIsCorrect" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="40" assertions="2" time="0.034642"/>
+      <testsuite name="CourseTest" file="/var/www/html/tests/CourseTest.php" tests="4" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.040926">
+        <testcase name="testConstructAndGetters" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="10" assertions="4" time="0.000246"/>
+        <testcase name="testAddQuestionAndJsonSerialize" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="20" assertions="3" time="0.000229"/>
+        <testcase name="testEmptyQuestionsList" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="34" assertions="2" time="0.012890"/>
+        <testcase name="testQuestionIsCorrect" class="CourseTest" classname="CourseTest" file="/var/www/html/tests/CourseTest.php" line="40" assertions="2" time="0.027560"/>
       </testsuite>
-      <testsuite name="MotorcycleTheoryQuestionTest" file="/var/www/html/tests/MotorcycleTheoryQuestionTest.php" tests="1" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.007920">
-        <testcase name="testConstructAndGetHTML" class="MotorcycleTheoryQuestionTest" classname="MotorcycleTheoryQuestionTest" file="/var/www/html/tests/MotorcycleTheoryQuestionTest.php" line="9" assertions="5" time="0.007920"/>
+      <testsuite name="MotorcycleTheoryQuestionTest" file="/var/www/html/tests/MotorcycleTheoryQuestionTest.php" tests="1" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.007023">
+        <testcase name="testConstructAndGetHTML" class="MotorcycleTheoryQuestionTest" classname="MotorcycleTheoryQuestionTest" file="/var/www/html/tests/MotorcycleTheoryQuestionTest.php" line="9" assertions="5" time="0.007023"/>
       </testsuite>
-      <testsuite name="QuestionSettersTest" file="/var/www/html/tests/QuestionSettersTest.php" tests="1" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.027497">
-        <testcase name="testSetters" class="QuestionSettersTest" classname="QuestionSettersTest" file="/var/www/html/tests/QuestionSettersTest.php" line="8" assertions="9" time="0.027497"/>
+      <testsuite name="QuestionSettersTest" file="/var/www/html/tests/QuestionSettersTest.php" tests="1" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.016021">
+        <testcase name="testSetters" class="QuestionSettersTest" classname="QuestionSettersTest" file="/var/www/html/tests/QuestionSettersTest.php" line="8" assertions="9" time="0.016021"/>
       </testsuite>
-      <testsuite name="SeederTest" file="/var/www/html/tests/SeederTest.php" tests="1" assertions="47" errors="0" warnings="0" failures="0" skipped="0" time="0.010200">
-        <testcase name="testCreateDemoDataStructure" class="SeederTest" classname="SeederTest" file="/var/www/html/tests/SeederTest.php" line="10" assertions="47" time="0.010200"/>
+      <testsuite name="SeederTest" file="/var/www/html/tests/SeederTest.php" tests="1" assertions="47" errors="0" warnings="0" failures="0" skipped="0" time="0.007139">
+        <testcase name="testCreateDemoDataStructure" class="SeederTest" classname="SeederTest" file="/var/www/html/tests/SeederTest.php" line="22" assertions="47" time="0.007139"/>
       </testsuite>
     </testsuite>
   </testsuite>

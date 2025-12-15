@@ -7,12 +7,23 @@ use Webt\Drivingschool\Question;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 class SeederTest extends TestCase {
-    public function testCreateDemoDataStructure() {
-        $courses = Seeder::createDemoData();
-        $this->assertIsArray($courses);
-        $this->assertCount(3, $courses);
+    private $courses;
 
-        foreach ($courses as $course) {
+    protected function setUp(): void
+    {
+        $this->courses = Seeder::createDemoData();
+    }
+
+    protected function tearDown(): void
+    {
+        $this->courses = null;
+    }
+
+    public function testCreateDemoDataStructure() {
+        $this->assertIsArray($this->courses);
+        $this->assertCount(3, $this->courses);
+
+        foreach ($this->courses as $course) {
             $this->assertInstanceOf(Course::class, $course);
             $this->assertIsArray($course->getQuestions());
             $this->assertCount(4, $course->getQuestions());
