@@ -12,14 +12,14 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2  # Holt den Code des Repositories
+        uses: actions/checkout@v2  
 
       - name: Build Docker containers
         run: |
-          docker-compose -f docker-compose.yaml build  # Docker-Container bauen
+          docker-compose -f docker-compose.yaml build 
 
       - name: Run Docker containers
         run: |
-          docker-compose -f docker-compose.yaml up -d  # Docker-Container im Hintergrund starten
+          docker-compose up -d
 
       
