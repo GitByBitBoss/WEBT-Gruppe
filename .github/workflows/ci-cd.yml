@@ -16,10 +16,10 @@ jobs:
 
       - name: Build Docker containers
         run: |
-          docker-compose -f docker-compose.yml build  # Docker-Container bauen
+          docker-compose -f docker-compose.yaml build  # Docker-Container bauen
 
       - name: Run Docker containers
         run: |
-          docker-compose -f docker-compose.yml up -d  # Docker-Container im Hintergrund starten
+          docker-compose -f docker-compose.yaml up -d  # Docker-Container im Hintergrund starten
 
       
