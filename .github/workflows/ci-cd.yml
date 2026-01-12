@@ -16,7 +16,7 @@ jobs:
 
       - name: Build Docker containers
         run: |
-          docker-compose -f docker-compose.yaml build 
+          docker build .
 
       - name: Run Docker containers
         run: |
