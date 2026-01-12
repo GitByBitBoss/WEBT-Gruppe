@@ -2,7 +2,7 @@ name: CI/CD for Docker with PHP and Nginx
 
 # Event-Trigger, um den Workflow bei einem Push auf den main-Branch auszulösen
 on:
-  [push]:
+  push:
     branches:
       - main
 
