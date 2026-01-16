@@ -28,5 +28,7 @@
     echo "<br>Session-Cookie-Parameter: ";
     var_dump(session_get_cookie_params());
 
-    // Manuell die Garbage Collection auslösen
+    //Manuell die Garbage Collection auslösen
+    
 ?>
+<button onclick="window.location.href='deleteSession.php'">ausloggen</button>
